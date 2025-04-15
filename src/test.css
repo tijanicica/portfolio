@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+:root {
+  font-family: system-ui, Oregano, "Saveur Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(236, 228, 217, 0.87);
+  background-color:#d1b5a9 !important;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  font-weight: 350 !important;
+  color: #5c5550 !important;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #b9aba9 !important;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e8dac8;
+  padding: 1.5rem 1.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-image {
+  height: 50px;
+}
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  min-width: 320px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem 2rem 4rem;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  font-style: italic;
+  color: #5c5550;
+}
+.line {
+  flex-grow: 0.9;
+  width: 2px;
+  background: #e8dac8;
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.box-outside {
+  position: absolute;
+  left: 10rem;
+  top: 208px;
+  width: 50%;
+  background: #e8dac8;
+  padding: 1rem 2rem;
+  border-radius: 0 0;
+  min-height: 51vh;
+
+  opacity: 0;
+  animation: fadeInLeft 4s ease forwards;
+
+}
+
+.welcome {
+  font-family: system-ui, Oregano, "Saveur Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  margin-left: 13rem;
+  font-size: 1.5rem;
+}
+
+.portfolio {
+  font-size: 7rem;
+  font-weight: 300;
+  color: #5c5550;
+}
+
+/*@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}*/
