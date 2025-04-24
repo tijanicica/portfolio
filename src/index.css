@@ -1,5 +1,57 @@
 @import "tailwindcss";
-:root {
+@theme
+{
+    --color-background: #d1b5a9;
+    --color-navbar: #e8dac8;
+    --default-font-color: #5c5550;
+    --font-hover: #b9aba9;
+    --color-line: #5c5550;
+    --color-box: 			#f2e6d5;
+    --color-welcome: 	white;
+    --color-portfolio: #736b66;
+
+
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 2s ease forwards;
+}
+
+.fadeSecond {
+    animation: fadeInLeft 4s ease forwards;
+}
+
+.fadeLater {
+    animation: fadeInLeft 6s ease forwards;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--default-font-color);
+}
+
+/* {
+    font-weight: 350 !important;
+    color: #5c5550 !important;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #b9aba9 !important;
+}
+*/
+
+/*:root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -66,4 +118,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
