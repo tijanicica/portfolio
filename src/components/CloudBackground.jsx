@@ -1,0 +1,36 @@
+import { useEffect, useState } from "react";
+
+export default function CloudBackground() {
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setShow(true);
+        }, 500);
+    }, []);
+
+    return (
+        <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
+            <div
+                className={`absolute w-[300px] h-[150px] bg-white rounded-full blur-2xl animate-cloud1 top-[10%] left-[-20%] ${
+                    show ? "opacity-30" : "opacity-0"
+                } transition-all duration-[3000ms]`}
+            />
+            <div
+                className={`absolute w-[400px] h-[200px] bg-white rounded-full blur-3xl animate-cloud2 top-[50%] right-[-30%] ${
+                    show ? "opacity-25" : "opacity-0"
+                } transition-all duration-[3000ms]`}
+            />
+            <div
+                className={`absolute w-[350px] h-[180px] bg-white rounded-full blur-2xl animate-cloud1 bottom-[20%] left-[-25%] ${
+                    show ? "opacity-20" : "opacity-0"
+                } transition-all duration-[3000ms]`}
+            />
+            <div
+                className={`absolute w-[250px] h-[120px] bg-white rounded-full blur-2xl animate-cloud2 bottom-[40%] right-[-20%] ${
+                    show ? "opacity-15" : "opacity-0"
+                } transition-all duration-[3000ms]`}
+            />
+        </div>
+    );
+}
