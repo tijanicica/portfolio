@@ -1,4 +1,6 @@
-import plane from "../assets/plane.jpeg"
+import laptop from "../assets/lapsi.png"
+import { ChevronDownIcon, EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
+
 
 const HomePage = () => {
     return (
@@ -43,17 +45,66 @@ const HomePage = () => {
             <div
                 className="
                     fixed bottom-6 left-1/2 -translate-x-1/2 text-center
-                    lg:left-auto lg:right-20 lg:bottom-25 lg:pr-4 lg:translate-x-0 lg:text-center
+                    lg:left-auto lg:right-3 lg:bottom-20 lg:pr-4 lg:translate-x-0 lg:text-center
                 "
             >
+
+
+               {/* <svg
+                    className="w-80 h-80 animate-draw hidden lg:block mb-2"
+                    viewBox="0 0 200 200"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M200 0 C160 40, 180 100, 100 100 C20 100, 60 180, 30 190"
+                        stroke="#5c5550"
+                        strokeWidth="2"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    />
+                    <polygon
+                        points="30,190 40,185 35,180"
+                        stroke="#5c5550"
+                        fill="none"
+                        strokeWidth="2"
+                    />
+                </svg>*/}
                 <p className="tracking-widest text-[var(--color-welcome)] text-sm ">
                     just a girl in a tech world
                 </p>
-                <p className="tracking-widest text-[var(--color-navbar)] text-sm">
+                <p className="tracking-widest text-[var(--color-navbar)] text-sm fadeInUp">
                     scroll for more
                 </p>
+
+
             </div>
 
+            <div className='social flex flex-col flex-wrap  justify-evenly items-center  bg-background bg-opacity-5 backdrop-blur p-7 hidden lg:block mb-20'>
+                <a href="https://www.github.com/tijanicica" className='flex items-center gap-3'>
+                    <button  className='text-portfolio rounded-2xl px-10 text-sm py-5 my-3 bg-background bg-opacity-50 link-button hover:text-[var(--color-welcome)] w-25'>
+                    <GitHubLogoIcon width="25px" height="25px" />
+                        <span className='p-3 font-thin'>GitHub</span>
+                    </button>
+                </a>
+
+                <a href="https://www.linkedin.com/in/tijana-petrovic-b8417a321/">
+                    <button  className='text-portfolio rounded-2xl px-10 text-sm py-5 my-3 bg-background bg-opacity-50 link-button hover:text-[var(--color-welcome)] w-25'>
+
+                    <LinkedInLogoIcon width="25px" height="25px" />
+                        <span className='p-3 font-thin'>LinkedIn</span>
+                    </button>
+                </a>
+
+                <a href="https://www.linkedin.com/in/tijana-petrovic-b8417a321/">
+                    <button  className='text-portfolio rounded-2xl px-10 text-sm py-5 my-3 bg-background bg-opacity-50 link-button hover:text-[var(--color-welcome)] w-25'>
+                        <EnvelopeClosedIcon width="25px" height="25px" />
+                        <span className='p-3 font-thin'>Email</span>
+                    </button>
+                </a>
+
+            </div>
 
         </div>
     );
