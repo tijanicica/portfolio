@@ -9,6 +9,8 @@
     --color-box: 			#f2e6d5;
     --color-welcome: 	white;
     --color-portfolio: #736b66;
+    --color-about: #2b2927;
+    --color-button: rgba(255, 255, 255, 0.2)
 
 
 }
@@ -47,11 +49,20 @@ body {
 }
 
 .animate-cloud1 {
-    animation: cloudMove1 50s ease-in-out infinite;
+    animation: cloudMove1 20s ease-in-out infinite;
 }
 
 .animate-cloud2 {
     animation: cloudMove2 10s ease-in-out infinite;
+}
+
+.cloud-shape {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:
+            inset 0 0 10px rgba(255, 255, 255, 0.3),
+            0 0 20px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    transition: transform 0.3s ease;
 }
 
 

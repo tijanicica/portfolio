@@ -22,11 +22,11 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex md:flex-row gap-6 text-center font-[350] no-underline">
-                <NavLink to='/' className="hover:text-[var(--font-hover)]">Home</NavLink>
-                <NavLink to='/about' className="hover:text-[var(--font-hover)]">About</NavLink>
-                <NavLink to='/skills' className="hover:text-[var(--font-hover)]">Skills</NavLink>
-                <NavLink to='/projects' className="hover:text-[var(--font-hover)]">Projects</NavLink>
-                <NavLink to='/contacts' className="hover:text-[var(--font-hover)]">Contact</NavLink>
+                <NavLink to='/' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Home</NavLink>
+                <NavLink to='/about' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>About</NavLink>
+                <NavLink to='/skills' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Skills</NavLink>
+                <NavLink to='/projects' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Projects</NavLink>
+                <NavLink to='/contacts' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Contact</NavLink>
             </div>
 
 
