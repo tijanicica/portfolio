@@ -22,8 +22,8 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex md:flex-row gap-6 text-center font-[350] no-underline">
-                <NavLink to='/' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Home</NavLink>
-                <NavLink to='/about' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>About</NavLink>
+                <a href="#Home" className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Home</a>
+                <a className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }} href="#About">About</a>
                 <NavLink to='/skills' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Skills</NavLink>
                 <NavLink to='/projects' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Projects</NavLink>
                 <NavLink to='/contacts' className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Contact</NavLink>
@@ -45,8 +45,8 @@ const Navbar = () => {
                             <X size={20} />
                         </button>
 
-                    <NavLink to='/' className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>Home</NavLink>
-                    <NavLink to='/about' className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>About</NavLink>
+                    <a href="#Home" className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>Home</a>
+                    <a href="#About" className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>About</a>
                     <NavLink to='/skills' className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>Skills</NavLink>
                     <NavLink to='/projects' className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>Projects</NavLink>
                     <NavLink to='/contacts' className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>Contact</NavLink>

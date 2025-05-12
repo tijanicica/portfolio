@@ -5,7 +5,7 @@ import {GitHubLogoIcon} from "@radix-ui/react-icons";
 const AboutPage = () => {
     return (
 
-        <div className="relative w-full h-screen">
+        <div id="About"  className=" relative w-full h-screen">
             <CloudBackground />
             <div className="flex flex-col m-0 w-full min-h-screen px-10 sm:pt-20">
                 <div className="flex flex-row items-center justify-start h-full gap-10">

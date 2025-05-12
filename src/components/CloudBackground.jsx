@@ -10,7 +10,7 @@ export default function CloudBackground() {
     }, []);
 
     return (
-        <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <div className="fixed inset-0 w-full h-full overflow-hidden  pointer-events-none z-0">
             <div
                 className={`absolute w-[300px] h-[150px] bg-white rounded-full blur-3xl animate-cloud1 top-[10%] left-[-20%] ${
                     show ? "opacity-30" : "opacity-0"

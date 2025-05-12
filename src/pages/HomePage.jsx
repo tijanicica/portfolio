@@ -8,12 +8,12 @@ import CloudBackground from "../components/CloudBackground.jsx";
 
 const HomePage = () => {
     return (
-        <div className="relative w-full h-screen">
+        <div id="Home" className="relative w-full h-screen">
             <CloudBackground />
         <div className="flex flex-col m-0 min-w-[320px] max-w-[80%] min-h-screen mx-auto justify-center items-center mt-25 sm:mt-20 relative">
 
 
-            <div className="hidden sm:block absolute top-[10%] left-0 flex flex-col items-center z-10">
+            <div className="hidden sm:block absolute top-[13%] left-0 flex flex-col items-center z-10">
                 <span className="text-sm md:text-base italic " style={{ fontFamily: "Montserrat" }}>2021</span>
                 <div className="w-[2px] flex-grow bg-navbar my-2" style={{ height: '50vh' }}></div>
                 <span className="text-sm md:text-base italic" style={{ fontFamily: "Montserrat" }}>Present</span>
@@ -46,8 +46,8 @@ const HomePage = () => {
 
 
 
-            <div className="flex flex-col sm:flex-row self-start justify-between w-full items-center sm:items-end pt-20">
-                <div className="order-2 sm:order-1 flex flex-col sm:flex-row items-center text-center sm:items-start gap-10 bg-opacity-5 backdrop-blur w-full sm:w-auto justify-center lg:ml-0 md:ml-0 lg:pl-0 md:pl-0 pt-20 ">
+            <div className="flex flex-col sm:flex-row self-start justify-between w-full items-center sm:items-end pt-20 z-10">
+                <div className="order-2 sm:order-1 flex flex-col sm:flex-row items-center text-center sm:items-start gap-10 bg-opacity-5 backdrop-blur w-full sm:w-auto justify-center lg:ml-0 md:ml-0 lg:pl-0 md:pl-0 pt-20 z-10">
                     <a href="https://www.github.com/tijanicica">
                         <button className="flex items-center text-welcome rounded-2xl cursor-pointer  text-sm  bg-background bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-0  justify-center sm:justify-start sm:w-auto">
                             <GitHubLogoIcon width="25px" height="25px"  />
