@@ -49,21 +49,21 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row self-start justify-between w-full items-center sm:items-end pt-20 z-10">
                 <div className="order-2 sm:order-1 flex flex-col sm:flex-row items-center text-center sm:items-start gap-10 bg-opacity-5 backdrop-blur w-full sm:w-auto justify-center lg:ml-0 md:ml-0 lg:pl-0 md:pl-0 pt-20 z-10">
                     <a href="https://www.github.com/tijanicica">
-                        <button className="flex items-center text-welcome rounded-2xl cursor-pointer  text-sm  bg-background bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-0  justify-center sm:justify-start sm:w-auto">
+                        <button className="flex items-center text-welcome rounded-2xl cursor-pointer  text-sm  bg-background bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-2  justify-center sm:justify-start sm:w-auto">
                             <GitHubLogoIcon width="25px" height="25px"  />
                             <span className="p-3 font-thin" style={{ fontFamily: "Montserrat" }}>GitHub</span>
                         </button>
                     </a>
 
                     <a href="https://www.linkedin.com/in/tijana-petrovic-b8417a321/">
-                        <button className="flex items-center text-welcome rounded-2xl cursor-pointer  text-sm   bg-background bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-0  justify-center sm:justify-start sm:w-auto ">
+                        <button className="flex items-center text-welcome rounded-2xl cursor-pointer  text-sm   bg-background bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-2  justify-center sm:justify-start sm:w-auto ">
                             <LinkedInLogoIcon width="25px" height="25px" />
                             <span className="p-3 font-thin" style={{ fontFamily: "Montserrat" }}>LinkedIn</span>
                         </button>
                     </a>
 
                     <a href="https://www.linkedin.com/in/tijana-petrovic-b8417a321/">
-                        <button className="flex items-center text-welcome rounded-2xl cursor-pointer  text-sm   bg-background bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-0  justify-center sm:justify-start sm:w-auto ">
+                        <button className="flex items-center text-welcome rounded-2xl cursor-pointer  text-sm   bg-background bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-2  justify-center sm:justify-start sm:w-auto p-0.5 ">
                             <EnvelopeClosedIcon width="25px" height="25px" />
                             <span className="p-3 font-thin" style={{ fontFamily: "Montserrat" }}>Email</span>
                         </button>

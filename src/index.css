@@ -10,7 +10,9 @@
     --color-welcome: 	white;
     --color-portfolio: #736b66;
     --color-about: #2b2927;
-    --color-button: rgba(255, 255, 255, 0.2)
+    --color-button: rgba(255, 255, 255, 0.2);
+    --color-cloud: #f5ede4;
+    --breakpoint-xs: 30rem;
 
 
 }

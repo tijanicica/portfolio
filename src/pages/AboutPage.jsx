@@ -24,7 +24,7 @@ const AboutPage = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center px-1 sm:px-6 md:px-10">
-                    <div className="flex justify-center text-[var(--color-about)] p-6 sm:p-10 lg:p-20 -mt-20 lg:-mt-40 w-full sm:w-[95%] max-w-5xl rounded-[30px] sm:rounded-[50px] lg:rounded-[70px] opacity-90 cloud-shape">
+                    <div className="flex justify-center text-[var(--color-about)] p-6 sm:p-10 lg:p-20 -mt-20 lg:-mt-40 w-full sm:w-[95%] max-w-5xl rounded-[30px] sm:rounded-[50px] lg:rounded-[70px] opacity-90 cloud-shape ">
                         <p className="text-sm sm:text-base md:text-base tracking-wide font-medium leading-relaxed" style={{ fontFamily: "Montserrat" }}>
                             I'm a final year student at the Faculty of Technical Sciences in Novi Sad, with a strong passion for working with data and understanding how things function under the hood. I enjoy exploring the intersection of mathematics, statistics, and data engineering, and I'm equally drawn to both backend and frontend development — building complete solutions from logic to interface.
 
