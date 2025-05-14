@@ -40,10 +40,10 @@ const AboutPage = () => {
                         href="/TijanaPetrovicCV.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex lg:w-1/4 text-center items-center text-welcome rounded-2xl cursor-pointer text-sm bg-button bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-0 justify-center"
+                        className="flex lg:w-1/8 text-center items-center text-welcome rounded-2xl cursor-pointer text-sm bg-button bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-0 justify-center"
                     >
                         <span className="p-3 font-thin" style={{ fontFamily: 'Montserrat' }}>
-                        Get my CV
+                        Download my CV
                         </span>
                     </a>
                 </div>

@@ -69,7 +69,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-row justify-center items-center flex-wrap sm:w-3/4 w-4/5 mx-10 mb-20 mt-10 lg:ml-40">
+                    <div className="flex flex-row justify-center items-center flex-wrap sm:w-3/4 w-4/5 mx-10 mb-20 mt-10 lg:ml-40" style={{ fontFamily: "Montserrat" }}>
                         {cards.map((card, index) => (
                             <motion.div
                                 key={index}

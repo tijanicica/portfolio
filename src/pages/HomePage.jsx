@@ -79,7 +79,7 @@ const HomePage = () => {
                     <p className="tracking-widest text-[var(--color-welcome)] text-sm " style={{ fontFamily: "Montserrat" }}>
                         just a girl in a tech world
                     </p>
-                    <p className="tracking-widest text-[var(--color-navbar)] text-sm fadeInUp" style={{ fontFamily: "Montserrat" }}>
+                    <p className="tracking-widest text-amber-50 text-sm fadeInUp  animate-bounce" style={{ fontFamily: "Montserrat" }}>
                         scroll for more
                     </p>
                 </div>
