@@ -88,3 +88,17 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #f5ede4;
 }
+
+.custom-toast {
+    background-color: #b9aba9 !important;  /* dark gray background */
+    color: white !important;             /* amber text */
+    border-radius: 8px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Inner body (text) */
+.custom-toast-body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+

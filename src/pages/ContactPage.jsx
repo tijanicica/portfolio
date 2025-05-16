@@ -1,5 +1,6 @@
 import CloudBackground from "../components/CloudBackground.jsx";
 import {Card} from "../ui/Card.jsx";
+import {toast} from "react-toastify";
 
 const ContactPage = () => {
     return (
@@ -21,11 +22,25 @@ const ContactPage = () => {
                     </div>
                 </div>
 
-                <Card className="flex flex-row items-start justify-start   backdrop-blur-lg flex-grow mt-10 mb-20 ml-10 mr-10 p-10 z-10 ">
+                <div className="flex flex-row items-start justify-start bg-[#ede5dd] opacity-90  backdrop-blur-lg flex-grow mt-10 mb-20 ml-10 mr-10 p-10 z-10 " style={{ fontFamily: "Montserrat" }}>
                     <div>
+                        <h1 className="text-[#736b66] text-xl " >Contact me</h1>
+                        <br/>
+
+                        <h2 className="text-[#736b66] text-l opacity-90 underline" >Email
+                        </h2>
+
+                        <a title="Copy address" className="text-[#736b66] text-sm opacity-80 cursor-pointer " onClick={() => {
+                            navigator.clipboard.writeText("tijanapetrovicns03@gmail.com");
+                            toast.success("Email copied to clipboard!", {
+                                icon: false,
+                            })
+                        }}>tijanapetrovicns03@gmail.com</a>
+
+
 
                     </div>
-                    </Card>
+                    </div>
                 </div>
 
         </div>
