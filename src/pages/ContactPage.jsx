@@ -24,18 +24,42 @@ const ContactPage = () => {
 
                 <div className="flex flex-row items-start justify-start bg-[#ede5dd] opacity-90  backdrop-blur-lg flex-grow mt-10 mb-20 ml-10 mr-10 p-10 z-10 " style={{ fontFamily: "Montserrat" }}>
                     <div>
-                        <h1 className="text-[#736b66] text-xl " >Contact me</h1>
+                        <h1 className="text-[#5c5550] text-xl " >Contact me</h1>
                         <br/>
 
-                        <h2 className="text-[#736b66] text-l opacity-90 underline" >Email
+                        <h2 className="text-[#5c5550] text-l  underline" >Email
                         </h2>
 
-                        <a title="Copy address" className="text-[#736b66] text-sm opacity-80 cursor-pointer " onClick={() => {
+                        <a title="Copy address" className="text-[#736b66] text-sm opacity-80 cursor-pointer hover:text-[#b9aba9] " onClick={() => {
                             navigator.clipboard.writeText("tijanapetrovicns03@gmail.com");
                             toast.success("Email copied to clipboard!", {
                                 icon: false,
                             })
                         }}>tijanapetrovicns03@gmail.com</a>
+
+                        <br/>
+                        <br/>
+
+                        <h2 className="text-[#5c5550] text-l  underline" >Phone number
+                        </h2>
+
+
+                        <a title="Copy number" className="text-[#736b66] text-sm opacity-80 cursor-pointer hover:text-[#b9aba9] " onClick={() => {
+                            navigator.clipboard.writeText("tijanapetrovicns03@gmail.com");
+                            toast.success("Number copied to clipboard!", {
+                                icon: false,
+                            })
+                        }}>+381654695389</a>
+
+                        <br/>
+                        <br/>
+
+                        <h2 className="text-[#5c5550] text-l  underline" >Based in
+                        </h2>
+
+
+                        <a href="https://www.google.com/maps/place/Novi+Sad/@45.2713329,19.6846336,11z/data=!3m1!4b1!4m6!3m5!1s0x475b10613de93455:0xb6f7d683724fe28!8m2!3d45.2396085!4d19.8227056!16zL20vMHN3d24?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" className="text-[#736b66] hover:text-[#b9aba9] text-sm opacity-80 cursor-pointer"
+                        >Novi Sad, Serbia</a>
 
 
 
