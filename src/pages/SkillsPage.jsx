@@ -54,7 +54,7 @@ const SkillsPage = () => {
         <>
             <div
                 id="Skills"
-                className="relative w-full min-h-screen mt-[55vh] xs:mt-0"
+                className="relative w-full min-h-screen mt-[55vh] xs:mt-0 -mb-40 xs:-mb-0 "
             >
                 <CloudBackground />
                 <div className="flex flex-col m-0 w-full min-h-screen px-10 sm:pt-20 z-10">
@@ -69,7 +69,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-row justify-center items-center flex-wrap sm:w-3/4 w-4/5 mx-10 mb-20 mt-10 lg:ml-40" style={{ fontFamily: "Montserrat" }}>
+                    <div className="flex flex-row justify-center items-center flex-wrap sm:w-3/4 w-4/5 mx-10 mb-60 mt-10 lg:ml-40" style={{ fontFamily: "Montserrat" }}>
                         {cards.map((card, index) => (
                             <motion.div
                                 key={index}

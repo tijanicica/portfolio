@@ -8,9 +8,9 @@ import CloudBackground from "../components/CloudBackground.jsx";
 
 const HomePage = () => {
     return (
-        <div id="Home" className="relative w-full h-screen">
+        <div id="Home" className="relative w-full h-screen mb-50 sm:mb-0">
             <CloudBackground />
-        <div className="flex flex-col m-0 min-w-[320px] max-w-[80%] min-h-screen mx-auto justify-center items-center mt-25 sm:mt-20 relative">
+        <div className="flex flex-col m-0 min-w-[320px] max-w-[80%] min-h-screen mx-auto justify-center items-center  mt-25 sm:mt-20 relative">
 
 
             <div className="hidden sm:block absolute top-[13%] left-0 flex flex-col items-center z-10">

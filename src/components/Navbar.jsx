@@ -24,9 +24,9 @@ const Navbar = () => {
             <div className="hidden md:flex md:flex-row gap-6 text-center font-[350] no-underline">
                 <a href="#Home" className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Home</a>
                 <a href="#About" className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>About</a>
-                <a href="#Skills" className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Skills</a>
-                <a href="#Projects" className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Projects</a>
-                <a href="#Contact" className="hover:text-[var(--font-hover)]" style={{ fontFamily: "Montserrat" }}>Contact</a>
+                <a href="#Skills" className="hover:text-[var(--font-hover)] " style={{ fontFamily: "Montserrat" }}>Skills</a>
+                <a href="#Projects" className="hover:text-[var(--font-hover)] " style={{ fontFamily: "Montserrat" }}>Projects</a>
+                <a href="#Contact" className="hover:text-[var(--font-hover)] " style={{ fontFamily: "Montserrat" }}>Contact</a>
             </div>
 
 
@@ -45,11 +45,11 @@ const Navbar = () => {
                             <X size={20} />
                         </button>
 
-                    <a href="#Home" className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>Home</a>
-                    <a href="#About" className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>About</a>
-                    <a href="#Skills" className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>Skills</a>
-                    <a href="#Projects" className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>Projects</a>
-                    <a href="#Contact" className="hover:text-[var(--font-hover)]" onClick={() => setIsOpen(false)}>Contact</a>
+                    <a href="#Home" className="hover:text-[var(--font-hover)] " style={{ fontFamily: "Montserrat" }} onClick={() => setIsOpen(false)}>Home</a>
+                    <a href="#About" className="hover:text-[var(--font-hover)] " style={{ fontFamily: "Montserrat" }} onClick={() => setIsOpen(false)}>About</a>
+                    <a href="#Skills" className="hover:text-[var(--font-hover)] " style={{ fontFamily: "Montserrat" }} onClick={() => setIsOpen(false)}>Skills</a>
+                    <a href="#Projects" className="hover:text-[var(--font-hover)] " style={{ fontFamily: "Montserrat" }} onClick={() => setIsOpen(false)}>Projects</a>
+                    <a href="#Contact" className="hover:text-[var(--font-hover)] " style={{ fontFamily: "Montserrat" }} onClick={() => setIsOpen(false)}>Contact</a>
                 </div>
                     </div>
             )}

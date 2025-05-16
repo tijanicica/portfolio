@@ -1,7 +1,6 @@
 import MainLayout from "../layouts/MainLayout.jsx";
 import CloudBackground from "../components/CloudBackground.jsx";
 import { Card } from "../ui/Card.jsx";
-import { motion } from "framer-motion";
 import bunny from "../assets/bunny.jpeg"
 import travel from "../assets/travel2.jpeg"
 import diabetes from "../assets/diabetes.jpeg"
@@ -49,12 +48,12 @@ const ProjectsPage = () => {
         <>
             <div
                 id="Projects"
-                className="relative w-full min-h-screen xs:-mt-50"
+                className="relative w-full min-h-screen -mt-20 xs:-mt-50 sm:-mb-45 -mb-25"
             >
                 <CloudBackground />
-                <div className="flex flex-col m-0 w-full min-h-screen px-10 sm:pt-20 z-10">
+                <div className="flex flex-col m-0 w-full min-h-screen px-10 sm:pt-20 z-10 bg-[#dec5ba] ">
                     <div className="flex flex-row items-center justify-start h-full gap-10">
-                        <div className="text-white flex-col gap-10 mt-20 xs:mt-30 lg:ml-[270px] ml-0">
+                        <div className="text-white  flex-col gap-10 mb-5 mt-30  sm:mt-10 lg:ml-[270px] ml-0">
                             <h1
                                 className="font-medium tracking-wide text-4xl lowercase"
                                 style={{ fontFamily: "Parisienne, cursive" }}
@@ -64,12 +63,12 @@ const ProjectsPage = () => {
                         </div>
                     </div>
 
-                    <div className="mt-10 grid grid-cols-1 gap-8 lg:w-[70%] mx-auto">
+                    <div className="mt-10 grid grid-cols-1 gap-8 lg:w-[70%] mx-auto mb-30">
                         {projects.map((project) => (
 
 
                             <a href = {project.link} key={project.id}>
-                            <Card key={project.id} className="flex flex-col md:flex-row p-4 bg-white/80 backdrop-blur-lg cursor-pointer hover:scale-105 z-10" style={{ fontFamily: "Montserrat" }}>
+                            <Card key={project.id} className="flex flex-col md:flex-row p-4 bg-white/80 backdrop-blur-lg cursor-pointer hover:scale-108 hover:border-white z-10" style={{ fontFamily: "Montserrat" }}>
                                 <img
                                     src={project.image}
                                     alt={project.name}
