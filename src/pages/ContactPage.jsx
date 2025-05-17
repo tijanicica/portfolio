@@ -1,9 +1,49 @@
 import CloudBackground from "../components/CloudBackground.jsx";
 import {Card} from "../ui/Card.jsx";
 import {toast} from "react-toastify";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon} from "@radix-ui/react-icons";
 
 const ContactPage = () => {
+    const form = useRef();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const formData = new FormData(form.current);
+        const email = formData.get("from_email")?.trim();
+        const name = formData.get("name")?.trim();
+        const subject = formData.get("subject")?.trim();
+        const message = formData.get("message")?.trim();
+
+        if (!email || !name || !subject || !message) {
+            toast.error("All fields are required.");
+            return;
+        }
+
+        emailjs
+            .sendForm(
+                'service_mysu06o',
+                'template_evx9rug',
+                form.current,
+                'nOyBIZKhQKgNx2lLu'
+            )
+            .then(
+                (result) => {
+                    toast.success("Message sent successfully!", {
+                        icon: false,
+                    });
+                    console.log(result.text);
+                },
+                (error) => {
+                    toast.error("Failed to send message.");
+                    console.log(error.text);
+                }
+            );
+    };
+
+
+
     return (
         <div id="Contact" className="relative w-full min-h-screen mt-20">
             <div className="absolute inset-0 z-0">
@@ -27,7 +67,7 @@ const ContactPage = () => {
                     className="flex flex-row sm:items-start items-center  xs:justify-start justify-center  bg-[#ede5dd] opacity-90  backdrop-blur-lg flex-grow mt-10 mb-20 sm:ml-10 sm:mr-10 p-10 z-10 "
                     style={{fontFamily: "Montserrat"}}>
 
-                    <div className="w-full sm:w-1/2 pr-10">
+                    <div className="w-full sm:w-1/2 pr-10 -ml-10  xs:-ml-0">
 
                         <div>
                             <h1 className="text-[#3d3a38] text-xl ">Contact me</h1>
@@ -108,36 +148,36 @@ const ContactPage = () => {
                         </div>
                     </div>
                     <div className="hidden sm:flex flex-col w-full sm:w-1/2 pl-10">
-                        <form className="flex flex-col gap-6">
+                        <form ref={form} onSubmit={handleSubmit} className="flex flex-col gap-6">
                             <div>
                                 <label className="text-[#3d3a38] text-md font-medium">E-mail</label>
                                 <br/>
-                                <input type="email" placeholder=""
+                                <input type="email" name="from_email" placeholder=""
                                        className="border-b border-[#3d3a38] bg-transparent focus:outline-none py-1 w-3/4"/>
                             </div>
                             <div>
                                 <label className="text-[#3d3a38] text-md font-medium">Full Name</label>
                                 <br/>
-                                <input type="name" placeholder=""
+                                <input type="text" name="name" placeholder=""
                                        className="border-b border-[#3d3a38] bg-transparent focus:outline-none py-1 w-3/4"/>
                             </div>
                             <div>
                                 <label className="text-[#3d3a38] text-md font-medium">Subject</label>
                                 <br/>
-                                <input type="text" placeholder=""
+                                <input type="text" name="subject" placeholder=""
                                        className="border-b border-[#3d3a38] bg-transparent focus:outline-none py-1 w-3/4"/>
                             </div>
                             <div>
                                 <label className="text-[#3d3a38] text-md font-medium">Message</label>
                                 <br/>
-                                <textarea placeholder=""
+                                <textarea name="message" placeholder=""
                                           className="border-b border-[#3d3a38] bg-transparent focus:outline-none py-1 mt-5 h-24 resize-none w-3/4"></textarea>
                             </div>
                             <br/>
 
                             <button
                                 type="submit"
-                                className="bg-[#262525] text-white rounded-full py-2 px-6 mt-4 hover:opacity-80 transition-opacity w-3/4"
+                                className="bg-[#262525] text-white rounded-full py-2 px-6 mt-4 hover:opacity-80 transition-opacity w-3/4 cursor-pointer"
                             >
                                 Send Message
                             </button>
