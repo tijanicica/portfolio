@@ -137,7 +137,7 @@ const ContactPage = () => {
                                     </button>
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/tijana-petrovic-b8417a321/">
+                                <a href="mailto:tijanapetrovicns03@gmail.com">
                                     <button
                                         className="flex items-center text-[#5c5550] rounded-2xl cursor-pointer  text-sm  link-button hover:text-[#b9aba9]  justify-center sm:justify-start sm:w-auto p-0.5 ">
                                         <EnvelopeClosedIcon width="25px" height="25px"/>

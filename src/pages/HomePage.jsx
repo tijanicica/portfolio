@@ -62,7 +62,7 @@ const HomePage = () => {
                         </button>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/tijana-petrovic-b8417a321/">
+                    <a href="mailto:tijanapetrovicns03@gmail.com">
                         <button className="flex items-center text-welcome rounded-2xl cursor-pointer  text-sm   bg-background bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-2  justify-center sm:justify-start sm:w-auto p-0.5 ">
                             <EnvelopeClosedIcon width="25px" height="25px" />
                             <span className="p-3 font-thin" style={{ fontFamily: "Montserrat" }}>Email</span>
