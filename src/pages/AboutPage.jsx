@@ -40,7 +40,7 @@ const AboutPage = () => {
 
                 <div className="flex justify-center items-center mt-10 z-10">
                     <a
-                        href="/TijanaPetrovicCV.pdf"
+                        href="/TijanaCV.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex lg:w-1/8 text-center items-center text-welcome rounded-2xl cursor-pointer text-sm bg-button bg-opacity-50 link-button hover:text-[var(--color-portfolio)] pl-0 justify-center mb-10"
