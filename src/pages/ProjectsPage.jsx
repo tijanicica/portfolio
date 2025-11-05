@@ -4,7 +4,7 @@ import { Card } from "../ui/Card.jsx";
 import bunny from "../assets/bunny.jpeg"
 import travel from "../assets/travel2.jpeg"
 import diabetes from "../assets/diabetes.jpeg"
-import goodreads from "../assets/books.jpeg"
+import food from "../assets/foodflowjpg.jpg"
 
 const projects = [
     {
@@ -17,11 +17,11 @@ const projects = [
     },
     {
         id: 2,
-        name: "Wandery - travel app",
+        name: "Travel application",
         image: travel,
-        technologies: [".NET", "WPF"],
-        description: "Booking-like desktop application for tourists and tour guides.",
-        link: "https://github.com/tijanicica/travelapplication",
+        technologies: ["C#", "Go", "React", "Docker", "Neo4j", "Mongo", "MySQL"],
+        description: "Booking-like microservice web application for tourists and tour guides.",
+        link: "https://github.com/tijanicica/soa-project",
     },
     {
         id: 3,
@@ -34,11 +34,11 @@ const projects = [
     },
     {
         id: 4,
-        name: "Goodreads clone",
-        image: goodreads,
-        technologies: ["Spring Boot", "Vue.js", "H2 database"],
-        description: "Goodreads clone website for renting, buying books, making reading schedules etc.",
-        link: "https://github.com/tijanicica/goodreads"
+        name: "Food delivery application - Foodflow",
+        image: food,
+        technologies: ["Spring Boot", "React", "PostgreSQL"],
+        description: "Web application for food delivery.",
+        link: "https://github.com/tijanicica/foodflow"
     },
 
 ];

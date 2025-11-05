@@ -23,7 +23,7 @@ const cards = [
             <>
                 Data Analytics / Data Processing /
                 <br />
-                Oracle / PostgreSQL /
+                Oracle / PostgreSQL / Mongo / Neo4j / Influx
                 <br />
                 Statistics / MS Excel
             </>
@@ -41,7 +41,7 @@ const cards = [
         title: "And more",
         skills: (
             <>
-                Git / Github /
+                Git / Github / Docker
                 <br />
                 English (C2 level)
             </>
