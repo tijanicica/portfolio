@@ -31,7 +31,7 @@ const cards = [
     },
     {
         title: "Languages",
-        skills: "Python / Java / C / C++ / C# / SQL / JavaScript / HTML / CSS",
+        skills: "Python / Java / C# / SQL / JavaScript / HTML / CSS",
     },
     {
         title: "Frameworks",
